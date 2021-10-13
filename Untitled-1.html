@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="Ejercicio2.js"></script>
+</head>
+<header>
+    <center>
+        <br>
+        <h1 class="bg-success p-2 text-dark bg-opacity-25">Orden de Pollo</h1>
+        <br>
+    </center>
+</header>
+<body class="container">
+    <span class="border">
+        <h4>
+            Combos y Productos
+        </h4>
+        <form id="contact-form" action="javascript:alert('¡Compra realizada!');">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Ensalada" id="flexCheckChecked" id="Super Combo" value="7.25">
+            <label class="form-check-label" for="flexCheckChecked">
+              Super Combo
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Ensalada" id="flexCheckChecked" id="Combo Personal" value="5.75">
+            <label class="form-check-label" for="flexCheckChecked">
+              Combo personal
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="Ensalada" id="flexCheckChecked" id="Combo infantil" value="3.50">
+            <label class="form-check-label" for="flexCheckChecked">
+                 Combo infantil
+            </label>
+            <br>
+            <label>Cantidad</label>
+            <div class="input-group mb-3">
+              <input type="text" id="txttipo">
+          </div>
+            <br>
+            <h4>
+                Productos
+            </h4>
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Ensalada" id="flexCheckChecked" value="1.50">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Ensalada
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Pieza de pollo pequeña" id="flexCheckChecked" value="1.25">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Pieza de pollo pequeña
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Bebida pequeña" id="flexCheckChecked" value="1.00">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Bebida pequeña
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Papa frita" id="flexCheckChecked" value="1.25">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Papa frita
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="Pieza de pollo grande" id="flexCheckChecked" value="1.75">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Pieza de pollo grande
+                      </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Bebida grande" id="flexCheckChecked" value="1.50">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Bebida grande
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Café" id="flexCheckChecked" value="0.50"> 
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Café
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="PPMediana" id="flexCheckChecked" value="1.50">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Pieza de pollo mediana
+                      </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Bebida mediana" id="flexCheckChecked" value="1.25">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Bebida mediana
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Postre" id="flexCheckChecked" value="1.25">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Postre
+                        </label>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <h4>Sugerencias</h4>
+              <div id="view"></div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="area"></textarea>
+                <label for="floatingTextarea"></label>
+              </div>
+              <br>
+              <h6>Total a pagar:</h6>
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="Precioto">
+              </div>
+              <input type="submit" name ="submit" value="Comprar" class="btn btn-primary" id="enviardatos" />
+            </form> 
+            <br>
+            <br>
+    </span>
+    <div id="datos" class="bg-success p-2 text-dark bg-opacity-10">
+        <h1 id="tit">Factura</h1>
+        <H4 id="tit">Productos</H4>
+        <h6 id="productos"></h6>
+        <h6 id="total"></h6>
+    </div>
+</body>
+</html>
